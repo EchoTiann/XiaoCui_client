@@ -1,20 +1,23 @@
 <template>
-  <div>
-    CardBra
-  </div>
+  <section>
+    <login-welcome />
+
+    <tip-card />
+
+    <PromotionCard />
+  </section>
 </template>
 
 <script>
 
+import TipCard from '@/views/card/Tip'
+import PromotionCard from '@/views/card/Promotion'
+import LoginWelcome from '@/views/card/LoginWelcome'
+
 export default {
   name: 'CardBra',
-  data() {
-    return {
-    }
-  },
-  created() {
-  },
-  methods: {
+  components: {
+    LoginWelcome, PromotionCard, TipCard
   }
 }
 </script>
